@@ -1,6 +1,6 @@
 .statistics {
   margin: 0 auto 30px;
-  width: 400px;
+  max-width: 400px;
 
   border-bottom-left-radius: 7px;
   border-bottom-right-radius: 7px;

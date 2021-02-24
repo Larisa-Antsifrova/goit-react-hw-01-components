@@ -1,5 +1,5 @@
 .profileCard {
-  width: 300px;
+  max-width: 300px;
   margin: 0 auto;
   border-radius: 5px;
   overflow: hidden;
@@ -61,6 +61,8 @@
 
 .label {
   display: block;
+  margin-bottom: 5px;
+
   font-size: 12px;
   font-weight: 500;
   color: #9e9e9e;
