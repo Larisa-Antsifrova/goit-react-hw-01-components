@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 
 import styles from './Statistics.module.css';
 
+// Function for getting random color in HEX format
 function getRandomColor() {
   return '#' + Math.floor(Math.random() * 16777215).toString(16);
 }

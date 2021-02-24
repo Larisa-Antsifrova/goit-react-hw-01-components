@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import Section from './components/Section/Section';
 import PageTitle from './components/PageTitle/PageTitle';
 import Title from './components/Title/Title';
@@ -10,7 +10,7 @@ import statisticalData from './db/statistical-data.json';
 
 function App() {
   return (
-    <Fragment>
+    <>
       <PageTitle text="React Homework. Module 1." />
       <Section>
         <Title text="Task One. Social Media Profile." />
@@ -24,10 +24,12 @@ function App() {
       </Section>
       <Section type="highlighted">
         <Title text="Task Two. Statistics." />
+        {/* Statistics component with title prop */}
         <Statistics title="Upload stats" stats={statisticalData} />
+        {/* Statistics component without title prop */}
         <Statistics stats={statisticalData} />
       </Section>
-    </Fragment>
+    </>
   );
 }
 
