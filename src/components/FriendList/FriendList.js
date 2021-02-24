@@ -9,7 +9,7 @@ const FriendList = ({ friends }) => (
     {friends.map(({ id, avatar, name, isOnline }) => (
       <FriendListItem
         key={id}
-        avatar={avatar}
+        // avatar={avatar}
         name={name}
         isOnline={isOnline}
       />
@@ -17,15 +17,15 @@ const FriendList = ({ friends }) => (
   </ul>
 );
 
-// FriendList.propTypes = {
-//   friends: PropTypes.arrayOf(
-//     PropTypes.shape({
-//       avatar: 'https://www.flaticon.com/svg/static/icons/svg/763/763704.svg',
-//       name: 'Mango',
-//       isOnline: true,
-//       id: 1812,
-//     }),
-//   ),
-// };
+FriendList.propTypes = {
+  friends: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      avatar: PropTypes.string,
+      name: PropTypes.string.isRequired,
+      isOnline: PropTypes.bool,
+    }),
+  ),
+};
 
 export default FriendList;

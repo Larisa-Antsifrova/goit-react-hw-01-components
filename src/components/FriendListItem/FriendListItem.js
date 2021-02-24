@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import styles from './FriendListItem.module.css';
+import defaultAvatar from './defaultAvatar.jpg';
 
 const FriendListItem = ({ avatar, name, isOnline }) => (
   <li className="item">
@@ -15,4 +16,14 @@ const FriendListItem = ({ avatar, name, isOnline }) => (
   </li>
 );
 
+FriendListItem.defaultProps = {
+  avatar: defaultAvatar,
+  isOnline: false,
+};
+
+FriendListItem.propTypes = {
+  avatar: PropTypes.string,
+  name: PropTypes.string.isRequired,
+  isOnline: PropTypes.bool,
+};
 export default FriendListItem;
