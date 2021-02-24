@@ -1,6 +1,5 @@
 import React, { Fragment } from 'react';
 import Section from './components/Section/Section';
-
 import PageTitle from './components/PageTitle/PageTitle';
 import Title from './components/Title/Title';
 import Profile from './components/Profile/Profile';
@@ -12,7 +11,7 @@ function App() {
     <Fragment>
       <PageTitle text="React Homework. Module 1." />
       <Section>
-        <Title text="Task One. Profile." />
+        <Title text="Task One. Social Media Profile." />
         <Profile
           name={name}
           tag={tag}

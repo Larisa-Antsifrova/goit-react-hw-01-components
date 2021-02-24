@@ -1,9 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Container from '../Container/Container';
+
 import styles from './Section.module.css';
 
-const Section = ({ text, children }) => (
+const Section = ({ children }) => (
   <section className={styles.section}>
     <Container>{children}</Container>
   </section>
