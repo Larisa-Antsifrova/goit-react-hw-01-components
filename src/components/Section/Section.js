@@ -4,13 +4,18 @@ import Container from '../Container/Container';
 
 import styles from './Section.module.css';
 
-const Section = ({ children }) => (
-  <section className={styles.section}>
+const Section = ({ type, children }) => (
+  <section className={styles[type]}>
     <Container>{children}</Container>
   </section>
 );
 
+Section.defaultProps = {
+  type: 'plain',
+};
+
 Section.propTypes = {
+  type: PropTypes.oneOf(['plain', 'highlighted']),
   children: PropTypes.node,
 };
 
