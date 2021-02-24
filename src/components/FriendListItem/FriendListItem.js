@@ -6,11 +6,7 @@ import defaultAvatar from './defaultAvatar.jpg';
 
 const FriendListItem = ({ avatar, name, isOnline }) => (
   <li className={styles.item}>
-    {isOnline ? (
-      <span className={styles.online}></span>
-    ) : (
-      <span className={styles.offline}></span>
-    )}
+    <span className={isOnline ? styles.online : styles.offline}></span>
     <img className={styles.avatar} src={avatar} alt="User avatar" />
     <p className={styles.name}>{name}</p>
   </li>
