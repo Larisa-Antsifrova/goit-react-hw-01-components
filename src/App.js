@@ -11,7 +11,7 @@ function App() {
         name={name}
         tag={tag}
         location={location}
-        // avatar={avatar}
+        avatar={avatar}
         stats={stats}
       />
     </div>

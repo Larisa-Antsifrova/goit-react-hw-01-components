@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import styles from './Profile.module.css';
+import defaultAvatar from './defaultAvatar.png';
 
 const Profile = ({ name, tag, location, avatar, stats }) => {
   return (
@@ -32,7 +33,7 @@ const Profile = ({ name, tag, location, avatar, stats }) => {
 };
 
 Profile.defaultProps = {
-  avatar: 'https://www.flaticon.com/svg/static/icons/svg/3135/3135715.svg',
+  avatar: defaultAvatar,
 };
 
 Profile.propTypes = {
