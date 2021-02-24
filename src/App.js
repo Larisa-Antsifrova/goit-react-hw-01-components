@@ -1,14 +1,16 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import Container from './components/Container/Container';
+
+import Title from './components/Title/Title';
 import Profile from './components/Profile/Profile';
 
 import { name, tag, location, avatar, stats } from './db/user.json';
 
 function App() {
   return (
-    <div>
+    <Fragment>
       <Container>
-        <h1>React Homework. Module 1.</h1>
+        <Title text="React Homework. Module 1." />
         <Profile
           name={name}
           tag={tag}
@@ -17,7 +19,7 @@ function App() {
           stats={stats}
         />
       </Container>
-    </div>
+    </Fragment>
   );
 }
 
