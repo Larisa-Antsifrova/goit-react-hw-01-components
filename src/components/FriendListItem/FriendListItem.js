@@ -5,14 +5,14 @@ import styles from './FriendListItem.module.css';
 import defaultAvatar from './defaultAvatar.jpg';
 
 const FriendListItem = ({ avatar, name, isOnline }) => (
-  <li className="item">
+  <li className={styles.item}>
     {isOnline ? (
-      <span className="status">Y</span>
+      <span className={styles.online}></span>
     ) : (
-      <span className="status">N</span>
+      <span className={styles.offline}></span>
     )}
-    <img className="avatar" src={avatar} alt="User avatar" width="48" />
-    <p className="name">{name}</p>
+    <img className={styles.avatar} src={avatar} alt="User avatar" />
+    <p className={styles.name}>{name}</p>
   </li>
 );
 
