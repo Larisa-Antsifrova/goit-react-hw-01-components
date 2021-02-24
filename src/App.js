@@ -4,6 +4,7 @@ import PageTitle from './components/PageTitle/PageTitle';
 import Title from './components/Title/Title';
 import Profile from './components/Profile/Profile';
 import Statistics from './components/Statistics/Statistics';
+import FriendList from './components/FriendList/FriendList';
 
 import { name, tag, location, avatar, stats } from './db/user.json';
 import statisticalData from './db/statistical-data.json';
@@ -32,6 +33,7 @@ function App() {
       </Section>
       <Section>
         <Title text="Task Three. Friends List." />
+        <FriendList friends={friends} />
       </Section>
     </>
   );
