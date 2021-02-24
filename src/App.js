@@ -7,6 +7,7 @@ import Statistics from './components/Statistics/Statistics';
 
 import { name, tag, location, avatar, stats } from './db/user.json';
 import statisticalData from './db/statistical-data.json';
+import friends from './db/friends.json';
 
 function App() {
   return (
@@ -28,6 +29,9 @@ function App() {
         <Statistics title="Upload stats" stats={statisticalData} />
         {/* Statistics component without title prop */}
         <Statistics stats={statisticalData} />
+      </Section>
+      <Section>
+        <Title text="Task Three. Friends List." />
       </Section>
     </>
   );
