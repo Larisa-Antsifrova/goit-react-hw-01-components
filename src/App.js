@@ -35,6 +35,10 @@ function App() {
         <Title text="Task Three. Friends List." />
         <FriendList friends={friends} />
       </Section>
+      <Section type="highlighted">
+        <Title text="Task Four. Transactions History." />
+        <FriendList friends={friends} />
+      </Section>
     </>
   );
 }
