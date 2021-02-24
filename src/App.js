@@ -15,9 +15,9 @@ import transactions from './db/transactions.json';
 function App() {
   return (
     <>
-      <PageTitle text="React Homework. Module 1." />
+      <PageTitle text="React Homework. Module 1" />
       <Section>
-        <Title text="Task One. Social Media Profile." />
+        <Title text="Task One. Social Media Profile" />
         <Profile
           name={name}
           tag={tag}
@@ -27,19 +27,22 @@ function App() {
         />
       </Section>
       <Section type="highlighted">
-        <Title text="Task Two. Statistics." />
+        <Title text="Task Two. Statistics" />
         {/* Statistics component with title prop */}
         <Statistics title="Upload stats" stats={statisticalData} />
         {/* Statistics component without title prop */}
         <Statistics stats={statisticalData} />
       </Section>
       <Section>
-        <Title text="Task Three. Friends List." />
+        <Title text="Task Three. Friends List" />
         <FriendList friends={friends} />
       </Section>
       <Section type="highlighted">
-        <Title text="Task Four. Transactions History." />
+        <Title text="Task Four. Transactions History" />
         <TransactionHistory items={transactions} />
+      </Section>
+      <Section>
+        <Title text="To be continued..." />
       </Section>
     </>
   );
