@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
-import Container from './components/Container/Container';
+import Section from './components/Section/Section';
 
-import Title from './components/Title/Title';
+import PageTitle from './components/PageTitle/PageTitle';
 import Profile from './components/Profile/Profile';
 
 import { name, tag, location, avatar, stats } from './db/user.json';
@@ -9,8 +9,8 @@ import { name, tag, location, avatar, stats } from './db/user.json';
 function App() {
   return (
     <Fragment>
-      <Container>
-        <Title text="React Homework. Module 1." />
+      <PageTitle text="React Homework. Module 1." />
+      <Section>
         <Profile
           name={name}
           tag={tag}
@@ -18,7 +18,7 @@ function App() {
           avatar={avatar}
           stats={stats}
         />
-      </Container>
+      </Section>
     </Fragment>
   );
 }
